@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trang chủ HUMG-TKB</title>
+    <style>
+     body{
+                margin:0px;
+        }
+        .menu {
+        background-color: #2fa4e7 ;
+        margin: 0px;
+        }
+        .danh-sach-muc {
+        /* list-style: bỏ dấu chấm của list */
+        list-style: none ;
+        margin:0px;
+        display: flex;
+        padding: 10px;
+        /* set các đối tượng bọc ở trong khối tự động cách nhau khoảng cách = giá trị truyền vào*/
+        gap: 15px;    
+        }
+        a{ 
+            color:white ;
+            text-decoration:none ;
+        }
+        main{
+            display: flex;
+        }
+        .khoi-trai {
+
+            width : 20%;
+            height: 90vh;
+            /*để vẽ đường viền dùng border
+            border sẽ có 3 tham số (độ dày-loại dduoownggf viền-màu sắc)  */
+            border-right: 1px solid #2fa4e7;
+
+        }
+        p{
+            margin: 0px;
+        }
+        input{
+            width: 100%;
+            padding: 5px 0;
+            border-radius: 5px;
+
+        }  
+        .khoi-dang-nhap{  
+            width: 90%;
+            height: 300px;
+            /* nếu margin để auto sẽ cân đối tượng ra giữa */
+            margin: 10px auto;
+
+        }
+        
+        
+        .thong-tin{
+            margin-bottom: 10px;
+
+        }
+        button{
+            width: 100%;
+            padding: 10px 0;
+            margin-top: 10px;
+            border-radius: 5px;
+            border: 1px solid #dedede;
+            color: white;
+        }
+        
+        
+        .khoi-phai{
+            
+            width : 80%;
+            height: 90vh;
+            
+                
+        }
+        .tin{
+            width: 95%;
+            height: 300px;
+            margin: 20px auto;
+            border: 1px solid #2fa4e7;
+            border-radius: 10px ;
+
+        }
+        .tin-tren{
+            width: 95%;
+            margin: auto;
+            border-bottom: 1px solid #2fa4e7;
+            display: flex;
+            justify-content: space-between;
+            padding: 10px;
+        }
+        h3{
+            margin: 0;
+
+        }
+        .danh-sach-tin{
+            width: 95%;
+            margin: auto;
+            padding: 10px;
+            display: flex;
+        }
+        .bai-viet-khoi-anh{
+            width: 100%;
+        }
+        .bai-viet {
+            width: 25%;
+            margin-right: 20px; 
+        }
+        .bai-viet-thoi-gian{
+            display: flex;
+            justify-content: flex-end;
+        }
+        img{
+            width: 100%;
+            height: 20vh;
+            border-radius: 10px ;
+        }
+        .xem-tiep{
+            color: #2fa4e7;
+            text-decoration: none;
+        }
+        .trang-chu{
+            background-color: #dcecf4;
+            color: #2fa4e7;
+            padding: 5px;
+            margin-top: 10px;
+             border-bottom: 1px solid #dedede;
+        }
+        .khao-sat{
+            width: 95% ;
+            margin: auto;
+            padding: 20px 10px;
+            border-bottom: 1px solid #dedede;
+            color: #2fa4e7;
+        }
+        .chuc-nang-khao-sat{
+            color: #2fa4e7;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <nav class="menu">
+            <ul class="danh-sach-muc ">
+                <li class="muc"><a href="#">Thực tập , đồ án</a></li>
+                <li class="muc"><a href="#">Thủ tục một cửa </a></li>
+                <li class="muc"><a href="#"> Một cửa online</a></li>
+                <li class="muc"><a href="#"> E-mail HUMG </a></li>
+
+            </ul>
+        </nav>
+        <!-- Nội dung chính -->
+         <main>
+         <div class="khoi-trai">
+           <div class="khoi-dang-nhap">
+                
+                <div class="khao-sat">
+                <a class="chuc-nang-khao-sat" href="#"> Trang Chủ  </a>
+             </div>
+                <div class="khao-sat">
+                <a class="chuc-nang-khao-sat" href="#"> Thông báo từ ban quản trị </a>
+             </div>
+             <div class="khao-sat">
+                <a class="chuc-nang-khao-sat" href="#"> Chương trình đào tạo </a>
+             </div>
+             <div class="khao-sat">
+                <a class="chuc-nang-khao-sat" href="#"> Đăng ký chính thức môn học </a>
+             </div>
+             <div class="khao-sat">
+                <a class="chuc-nang-khao-sat" href="#"> Đăng ký nguyện vọng các môn cần học </a>
+             </div>
+             <div class="khao-sat">
+                <a class="chuc-nang-khao-sat" href="#"> Xem học phí </a>
+             </div>
+             <div class="khao-sat">
+                <a class="chuc-nang-khao-sat" href="#"> Đóng học phí </a>
+             </div>
+             
+             <div class="trang-chu">
+                <p>Thời khóa biểu tuần</p>
+                </div> <br>
+             <div class="khao-sat">
+                <a class="chuc-nang-khao-sat" href="#"> Thời khóa biểu học kỳ </a>
+             </div>
+             <div class="khao-sat">
+                <a class="chuc-nang-khao-sat" href="#"> Kết quả điểm danh </a>
+             </div>
+             <div class="khao-sat">
+                <a class="chuc-nang-khao-sat" href="#"> Lịch thi </a>
+             </div>
+             <div class="khao-sat">
+                <a class="chuc-nang-khao-sat" href="#"> Xem điểm  </a>
+             </div>
+             
+             
+                
+           </div>
+        </div>
+        <!-- khối phải  -->
+         <div class="khoi-phai">
+            <div>
+                <b> Thời khóa biểu dạng tuần </b></font><br>
+                <select name="thoi khoa bieu">
+                    <option value="Học kỳ 1 - Năm học 2026 - 2027">Học kỳ 1 - Năm học 2026 - 2027</option> 
+                </select>
+                <select>
+                    <option value="Thời khóa biểu cá nhân">Thời khóa biểu cá nhân</option> 
+                </select> <br>
+                <select>
+                    <option value="Tuần 8 [từ ngày 21/09/2026 đến ngày 27/09/2026]">Tuần 8 [từ ngày 21/09/2026 đến ngày 27/09/2026]</option>
+                </select>
+            </div>
+           <div>
+            <table border="1">
+                
+                
+                <tr>
+                   <th> Tiết</th>
+                   <th> Thứ 2</th>
+                   <th> Thứ 3</th>
+                   <th> Thứ 4</th>
+                   <th> Thứ 5</th>
+                   <th> Thứ 6</th>
+                   <th> Thứ 7</th>
+                   <th> Chủ Nhật</th>
+                   
+                   
+                   
+                </tr>
+                <!-- tiết -->
+                <tr>
+                <td> Tiết 1</td>
+                
+                
+                
+                
+                <td></td>
+                <td></td>
+                <td></td>
+                <td rowspan="3"><strong>
+                                Phân tích dữ liệu địa không gian
+                                (7050356)
+                            </strong><br>
+
+                            Nhóm: 200<br>
+                            Phòng: HNA1-405-A1-405<br>
+                            GV: Trần Vân Anh
+
+                            <div class="clock">
+                                06:45 → 09:35
+                            </div></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                </tr>
+                <tr>
+                <td> Tiết 2</td>
+                
+                
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                </tr>
+                <tr>
+                <td> Tiết 3</td>
+                
+                
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                </tr>
+                <tr>
+                <td> Tiết 4</td>
+                
+                
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                </tr>
+                <tr>
+                <td> Tiết 5</td>
+                
+                
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                </tr>
+                <tr>
+                <td> Tiết 6</td>
+                
+                
+                <td rowspan="4"><strong>
+                                Tiếng Anh ngành Địa tin học
+                                (7050357)
+                            </strong><br>
+
+                            Nhóm: MT<br>
+                            Phòng: -<br>
+                            GV: Trần Hồng Hạnh
+
+                            <div class="clock">
+                                13:30 → 17:20
+                            </div></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                </tr>
+                <tr>
+                <td> Tiết 7</td>
+                
+                
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                </tr>
+                <tr>
+                <td> Tiết 8</td>
+                
+                
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                </tr>
+                <tr>
+                <td> Tiết 9</td>
+                
+                
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                </tr>
+                <tr>
+                <td> Tiết 10</td>
+                
+                
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td rowspan="4"><strong>
+                                Phát triển ứng dụng
+                                Web + BTL (7080116)
+                            </strong><br>
+
+                            Nhóm: 04<br>
+                            Phòng: HNA1D402-D4-2<br>
+
+                            <div class="clock">
+                                 16:30 → 19:20
+                            </div></td>
+                <td></td>
+                </tr>
+                <tr>
+                <td> Tiết 11</td>
+                
+                
+                <td></td>
+                <td rowspan="3"><strong>
+                                 Địa tin học ứng dụng trong tài nguyên môi trường
+                                (7050534)
+                            </strong><br>
+
+                            Nhóm: 1<br>
+                            Phòng: HNAD402<br>
+                            GV: pHẠM THỊ LÀN
+
+                            <div class="clock">
+                                 17:30 → 20:20
+                            </div></td>
+                <td rowspan="3"><strong>
+                                CHÍNH SÁCH ĐẤT ĐAI
+                                (7050357)
+                            </strong><br>
+
+                            Nhóm: 1<br>
+                            Phòng: HNA1405<br>
+                            GV: NGUYỄN THỊ DUNG
+
+                            <div class="clock">
+                            17:30 → 20:20
+                            </div></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                </tr>
+                <tr>
+                <td> Tiết 12</td>
+                
+                
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                </tr>
+                <tr>
+                <td> Tiết 13</td>
+                
+                
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                </tr>
+
+            </table>
+         </div> 
+         </div>
+</body>
+</html>
