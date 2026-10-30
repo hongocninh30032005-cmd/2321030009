@@ -90,7 +90,7 @@
        document.writeln(ngay);
        
         // láy năm
-        var nam = homNay.getFullYear() + 1;
+        var nam = homNay.getFullYear() ;
        document.writeln("<br>");
        document.writeln(nam);
 
@@ -105,7 +105,7 @@
        document.writeln(ngay);
 
        //Lấy thu
-       var thu = homNay.getDay();
+       var thu = homNay.getDay() +1 ;
        document.writeln("<br>");
        document.writeln(thu);
 
@@ -185,7 +185,7 @@
         document.writeln("Hôm nay là chủ nhật");
        }
        else{
-        document.writeln(" Hôm nay không phải chủ nhật");
+        document.writeln(" Hôm nay không phải chủ nhật" +"<br>")  ;
        }
        
        // 0->4 F
@@ -193,21 +193,117 @@
        // 5->7 C
        // 7->8 B
        // 8-10 A+
-       var diem= 7
-       if (diem) {
-        document.writeln(" Qua môn");
-       }
-       else{
-        document.writeln(" ");
-       }
+       var diem= 5;
 
+       if (diem < 4) {
+        document.writeln(" Điểm F");
+       }
+       else if ( diem >=4 && diem < 5 ) {
+        document.writeln(" Điểm D ");
+       }
+       else if ( diem >=5 && diem < 7 ) {
+        document.writeln(" Điểm C ");
+       }
+       else if (diem >=7 && diem < 8 ) {
+        document.writeln(" Điểm B ");
+       }
+       else if ( diem >=8 && diem <  10 ) {
+        document.writeln(" Điểm A ");
+       }
+       else{ 
+        document.writeln(" Điểm không hợp lệ");
+       }
+       // object: var name = { }
+       var thongTinSinhVien ={
+        hoTen :  " Ho Ngoc Ninh ",
+        tuoi :21 ,
+        gioiTinh : true, //true: Nam, fals: Nu
+        diaChi: {
+            thanhPho: " Ha Noi",
+            phuong :" Dong Ngac ",
+            duong :" Le Van Hien ",
+        }
+       }
+       var thongTinPhim ={
+        tenPhim :"Mua Do",
+        daoDien: "Dang Thai Nguyen",
+        nam : 2025,
+        theLoai : "Lich Su",
+        thoiLuong : 124,
+        dienVien : {
+            dienVienChinh: [
+                "Do Nhat Hoang","Le Ha Anh", "Steven Nguyen"
+            ],
+            dienVienPhu : [
+                "Do Nhat Hoang","Le Ha Anh", "Steven Nguyen"
+            ],
+        },
+    
+       }
+       document.writeln("<br>")
+       document.writeln(thongTinPhim.dienVien.dienVienChinh[2]);
+       // switch case
+       var d = new Date();
+       var theDay = d.getDay();
+       switch (theDay){
+        case 5:
+            document.writeln(" Finally Friday");
+            break;
+            case 5:
+            document.writeln(" Super Satuday");
+            break;
+            case 5:
+            document.writeln(" Sleep Sunday");
+            break;
+            default:
+                document.writeln( "I'm looking forward to the weekend! ");
+
+       }
+       for( var index = 1; index <=10; index++){
+           document.writeln("<br> Xin Chào !"+ index);
+       }
+       var danhSachSinhVien = [ "Nhung","Ninh", "Linh", "Tung","Am"];
+       document.writeln("<br> Xin chào "+ danhSachSinhVien[0]);
+       for (var i=0 ; i< danhSachSinhVien.length;i++){
+        document.writeln("<br>" + i + "<br>");
+        document.writeln( "Xin Chào" + danhSachSinhVien[i]);
+       }
+       var ds = [ "Nhung","Ninh", "Linh", "Tung","Am"];
+       for (var i=0 ; i< ds.length;i++) {
+        
+        if (ds[i] == " Nhung"|| ds[i]== "Ninh") {
+        document.writeln("<br>");
+        document.writeln("Xin Chào" + ds[i]);
+       }
+    }
+    // popup boxes 
+    alert ( "Xin Chào!");
+
+    // confirm
+    var r = confirm("Press a button")
+    if(r == true) {
+        document.write("You  pressed OK!")
+    }
+    else{
+        document.write("You pressed Cancel!")
+    }
+
+    // promt
+    r = prompt("Nhập vào họ tên", " Nhập  tên vào đây!");
+    document.write(r)
+
+
+    
+
+
+    
        
+    
 
-
-
+    
      </script>
      <!-- external JS -->
-     <script src="script.js"></script>
+     <!-- <script src="script.js"></script> -->
     
 </body>
 </html>
