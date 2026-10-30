@@ -29,12 +29,41 @@
     <!--  nội dung chính trang  --> 
       <main>
         <div class="banner">
-            <img class="banner-img" src="../ảnh/banner.jpg">
+            <iframe class="video" src="https://www.youtube.com/embed/vvmFvoyXPyE?si=-QnQr9-XCuXOr4WS" ></iframe>
         </div>
         <!-- thể loại -->
          <div class="the-loai">
             <div class="ten-the-loai">
                 <h3> Phim hài hước</h3>
+                
+            <div class="danh-sach">
+                <div onclick="chonBai(1)" class="bai-hat">
+                    <img class="anh-bai" src="../ảnh/19.jpg" alt="">
+                    <p>Là Ai Mang Nắng Đi Xa</p>
+
+                </div>
+                <div onclick="chonBai(2)" class="bai-hat">
+                    <img class="anh-bai" src="../ảnh/19.jpg" alt="">
+                    <p>Gửi - Reddy</p>
+
+                </div>
+                <div onclick="chonBai(3)" class="bai-hat">
+                    <img class="anh-bai" src="../ảnh/20.jpg" alt="">
+                    <p>Cho Con Tim Một Lý Do</p>
+
+                </div>
+                <div onclick="chonBai(4)" class="bai-hat">
+                    <img class="anh-bai" src="../ảnh/21.jpg" alt="">
+                    <p> Ngoặt </p>
+                </div>
+                <div onclick="chonBai(5)" class="bai-hat">
+                    <img class="anh-bai" src="../ảnh/20.jpg" alt="">
+                    <p>Vì Anh Đã Yêu</p>
+                </div>
+
+            </div>
+
+        </div>
 
             </div>
             <div class="danh-sach-phim">
@@ -54,6 +83,9 @@
                     <img src="../ảnh/anh17.jpg" alt="">
                 </div>
             </div>
+            
+
+        </div>
          </div><br>
          <!-- tác phẩm -->
           <div class="the-loai">
@@ -134,8 +166,53 @@
 
 
       </main>
-      <!--  Chân trang  --> 
-        <footer></footer>
+      <script>
+    var danhSachVid = [
+            {
+                id: 1,
+                ten: "Là Ai Mang Nắng Đi Xa",
+                duongDanAnh: " 20.jpg",
+                duongDanYoutube: "https://www.youtube.com/embed/zHDECJy0p7k?si=2RuGygZ1vd9xcN1x",
+            },
+
+            {
+                id: 2,
+                ten: "Gửi - Reddy",
+                duongDanAnh: "20.jpg",
+                duongDanYoutube: "www.youtube.com/embed/rSn1-EXQL-A?si=Rkov9TqRlzOMSdMx" ,
+            },
+
+            {
+                id: 3,
+                ten: "Cho Con Tim Một Lý Do",
+                duongDanAnh: "20.jpg",
+                duongDanYoutube: "www.youtube.com/embed/TYO3Q5GxQKw?si=yOOKmNQ4YICzvXQY",
+            },
+
+            {
+                id: 4,
+                ten: "Ngoặt",
+                duongDanAnh: "20.jpg",
+                duongDanYoutube: "www.youtube.com/embed/mKOjYDmmAis?si=d7jtKQ-mICiDWwFB",
+            },
+
+            {
+                id: 5,
+                ten: "Vì Anh Đã Yêu",
+                duongDanAnh: "20.jpg",
+                duongDanYoutube: "https://www.youtube.com/embed/XzHNkmqw19Y?si=kt-GYH_rf0O5rWig",
+                
+            },
+        ];
+
+        function chonBai(id) {
+            for (let i=0; i < danhSachVid.length; i++) {
+                if(danhSachVid[i].id == id){
+                    document.getElementsByClassName("video")[0].src =danhSachVid[i].duongDanYoutube
+                }
+            }
+        } 
+        </script>
     
 </body>
 </html>
